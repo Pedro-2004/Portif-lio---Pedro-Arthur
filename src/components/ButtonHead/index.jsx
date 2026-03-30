@@ -6,7 +6,6 @@ const ButtonHead = ({ title }) => {
       <Button
         variant='contained'
         sx={{
-          marginLeft: 'auto',
           marginTop: 7.7,
           borderRadius: 5,
           background: ' #000000ff',

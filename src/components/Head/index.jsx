@@ -7,7 +7,15 @@ const Head = ({ children }) => {
         position='fixed'
         sx={{ background: '#00FA9A', borderRadius: 5, height: 100 }}
       >
-        <Toolbar sx={{ gap: 2 }}>{children}</Toolbar>
+        <Toolbar
+          sx={{
+            gap: 2,
+            display: 'flex',
+            justifyContent: 'flex-end',
+          }}
+        >
+          {children}
+        </Toolbar>
       </AppBar>
     </>
   );

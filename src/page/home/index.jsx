@@ -7,6 +7,7 @@ const Home = () => {
     <div className='home_container'>
       <Head>
         <ButtonHead title='Projetos' />
+        <ButtonHead title='contatos' />
       </Head>
     </div>
   );
