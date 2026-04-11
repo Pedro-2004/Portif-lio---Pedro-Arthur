@@ -1,6 +1,7 @@
 import './style.css';
 import ButtonHead from '@/components/ButtonHead/index';
 import Head from '@/components/Head/index';
+import InformationalText from '@/components/informationalText';
 import PhotoCard from '@/components/photoCard/index';
 const Home = () => {
   return (

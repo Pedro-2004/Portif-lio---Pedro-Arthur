@@ -3,7 +3,7 @@ import { AppBar, Toolbar } from '@mui/material';
 const Head = ({ children }) => {
   return (
     <>
-      <AppBar sx={{ background: '#00FA9A', height: 80 }}>
+      <AppBar sx={{ background: 'black', height: 85 }}>
         <Toolbar
           sx={{
             gap: 2,
