@@ -1,15 +1,18 @@
 import './style.css';
 import ButtonHead from '@/components/ButtonHead/index';
 import Head from '@/components/Head/index';
-
+import PhotoCard from '@/components/photoCard/index';
 const Home = () => {
   return (
-    <div className='home_container'>
+    <>
       <Head>
         <ButtonHead title='Projetos' />
         <ButtonHead title='contatos' />
       </Head>
-    </div>
+      <div className='home-content'>
+        <PhotoCard />
+      </div>
+    </>
   );
 };
 export default Home;

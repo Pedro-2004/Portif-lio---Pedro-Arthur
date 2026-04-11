@@ -3,16 +3,13 @@ import { AppBar, Toolbar } from '@mui/material';
 const Head = ({ children }) => {
   return (
     <>
-      <AppBar
-        position='fixed'
-        sx={{ background: '#00FA9A', borderRadius: 5, height: 100 }}
-      >
+      <AppBar sx={{ background: '#00FA9A', height: 80 }}>
         <Toolbar
           sx={{
             gap: 2,
             display: 'flex',
             justifyContent: 'center',
-            marginTop: 7.0,
+            marginTop: 4.0,
           }}
         >
           {children}

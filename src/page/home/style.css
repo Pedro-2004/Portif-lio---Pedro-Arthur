@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.home_container {
-  background-color: rgb(0, 0, 0);
-  color: rgb(247, 247, 247);
+.home-content {
+  display: flex;
   min-height: 100vh;
-  padding-left: 30px;
-  padding-top: 500px;
+  align-items: center;
+  justify-content: center;
 }
