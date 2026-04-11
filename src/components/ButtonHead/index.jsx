@@ -4,11 +4,9 @@ const ButtonHead = ({ title }) => {
   return (
     <>
       <Button
-        variant='contained'
+        variant='text'
         sx={{
-          marginTop: 7.7,
-          borderRadius: 5,
-          background: ' #000000ff',
+          color: 'black',
         }}
       >
         {title}

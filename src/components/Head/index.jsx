@@ -11,7 +11,8 @@ const Head = ({ children }) => {
           sx={{
             gap: 2,
             display: 'flex',
-            justifyContent: 'flex-end',
+            justifyContent: 'center',
+            marginTop: 7.0,
           }}
         >
           {children}
