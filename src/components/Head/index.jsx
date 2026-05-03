@@ -1,22 +1,62 @@
-import { AppBar, Toolbar } from '@mui/material';
+import { AppBar, Toolbar, Box } from '@mui/material';
+import Logo from '@/components/Logo/index.jsx';
+import ButtonHead from '@/components/ButtonHead/index.jsx';
+import { Divider } from '@mui/material';
+import DownloadIcon from '@mui/icons-material/Download';
 
-const Head = ({ children }) => {
+const Head = () => {
   return (
     <>
-      <AppBar
-        position='fixed'
-        sx={{ background: '#00FA9A', borderRadius: 5, height: 100 }}
-      >
+      <AppBar sx={{ background: 'transparent', height: 85 }}>
         <Toolbar
           sx={{
             gap: 2,
             display: 'flex',
-            justifyContent: 'center',
-            marginTop: 7.0,
+            alignItems: 'center',
+            marginTop: 4.0,
           }}
         >
-          {children}
+          <Box sx={{ flexGrow: 1 }}>
+            <Logo />
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              position: 'absolute',
+              left: '50%',
+              transform: 'translateX(-50%)',
+            }}
+          >
+            <ButtonHead title='Projetos' fontSize='14px' />
+            <Divider
+              orientation='vertical'
+              sx={{ backgroundColor: 'white' }}
+              flexItem
+            />
+            <ButtonHead title='contatos' fontSize='14px' />
+            <Divider
+              orientation='vertical'
+              sx={{ backgroundColor: 'white' }}
+              flexItem
+            />
+            <ButtonHead title='Experiencias' fontSize='14px' />
+            <Divider
+              orientation='vertical'
+              sx={{ backgroundColor: 'white' }}
+              flexItem
+            />
+            <ButtonHead title='Habilidades' fontSize='14px' />
+          </Box>
+          <ButtonHead
+            title='Curriculo'
+            icon={<DownloadIcon />}
+            border='2px solid'
+            borderColor='white'
+            borderRadius='100px'
+            fontSize='14px'
+          />
         </Toolbar>
+        <Divider sx={{ backgroundColor: 'white' }} />
       </AppBar>
     </>
   );

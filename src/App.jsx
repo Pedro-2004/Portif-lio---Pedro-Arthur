@@ -1,4 +1,5 @@
-import Home from '@/page/Home/index.jsx';
+
+import Home from '@/page/home/index.jsx';
 
 const App = () => (
   <>
