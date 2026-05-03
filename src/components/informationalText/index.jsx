@@ -1,12 +1,23 @@
-import {Typography} from "@mui/material"
-const InformationalText = ({ title, colorText, fontSize, fontFamily }) => {
+import { Typography } from '@mui/material';
+const InformationalText = ({
+  title,
+  colorText,
+  fontSize,
+  fontFamily,
+  fontWeight,
+}) => {
   return (
     <>
-    <Typography sx={{
-      fontFamily: fontFamily,
-      color: colorText,
-      fontSize: fontSize
-    }}>{title}</Typography>
+      <Typography
+        sx={{
+          fontFamily: fontFamily,
+          color: colorText,
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+        }}
+      >
+        {title}
+      </Typography>
     </>
   );
 };
