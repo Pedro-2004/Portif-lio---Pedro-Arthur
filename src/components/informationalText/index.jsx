@@ -1,7 +1,12 @@
-const InformationalText = ({ title }) => {
+import {Typography} from "@mui/material"
+const InformationalText = ({ title, colorText, fontSize, fontFamily }) => {
   return (
     <>
-      <p style={{ fontFamily: 'Times New Roman' }}> {title}</p>
+    <Typography sx={{
+      fontFamily: fontFamily,
+      color: colorText,
+      fontSize: fontSize
+    }}>{title}</Typography>
     </>
   );
 };

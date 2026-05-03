@@ -6,8 +6,8 @@ const ButtonHead = ({ title }) => {
     <>
       <Button
         variant='text'
-        sx={{ color: 'white' }}
-        endIcon={<ArrowForwardIosIcon />}
+        sx={{ color: 'white', fontFamily: 'system-ui', fontSize: '15px', }}
+      
       >
         {title}
       </Button>

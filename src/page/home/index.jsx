@@ -1,17 +1,17 @@
 import './style.css';
-import ButtonHead from '@/components/ButtonHead/index';
+import InformationalText from '@/components/InformationalText/index';
 import Head from '@/components/Head/index';
-import PhotoCard from '@/components/PhotoCard/index';
+import {Box} from '@mui/material';
+
 const Home = () => {
   return (
     <>
-      <Head>
-        <ButtonHead title='Projetos' />
-        <ButtonHead title='contatos' />
-      </Head>
-      <div className='home-content'>
-        <PhotoCard />
-      </div>
+      <Head />
+      <Box sx={{display: 'flex', marginTop: '230px', marginLeft: '90px', flexDirection: "column" }}>
+
+     <InformationalText title='Desenvolvedor' colorText='white' fontSize='40px' fontFamily='system-ui'/>
+     <InformationalText title='Web' colorText='#162E93' fontSize='40px' fontFamily='system-ui'/>
+      </Box>
     </>
   );
 };
