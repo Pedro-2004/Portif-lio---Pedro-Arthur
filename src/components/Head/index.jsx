@@ -1,9 +1,10 @@
-import { AppBar, Toolbar } from '@mui/material';
+import { AppBar, Toolbar, Box } from '@mui/material';
+import Logo from '@/components/Logo/index.jsx';
 
 const Head = ({ children }) => {
   return (
     <>
-      <AppBar sx={{ background: 'black', height: 85 }}>
+      <AppBar sx={{ background: '#00FA9A', height: 85 }}>
         <Toolbar
           sx={{
             gap: 2,
@@ -11,7 +12,10 @@ const Head = ({ children }) => {
             justifyContent: 'center',
             marginTop: 4.0,
           }}
-        >
+          > 
+        <Box sx={{ flexGrow: 1}}>
+          <Logo/>          
+        </Box>
           {children}
         </Toolbar>
       </AppBar>

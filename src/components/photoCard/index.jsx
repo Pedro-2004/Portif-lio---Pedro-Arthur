@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Card, CardContent, CardMedia, Box } from '@mui/material';
-import InformationalText from '../informationalText';
+import InformationalText from '../InformationalText';
 
 const PhotoGard = () => {
   return (
@@ -9,7 +9,7 @@ const PhotoGard = () => {
         display: 'flex', // Ativa o Flexbox
         width: 800, // Largura fixa que você definiu
         height: 400, // Altura fixa
-        marginTop: '60px',
+        marginTop: '140px',
         marginX: 'auto', // Centraliza horizontalmente
         borderRadius: '20px',
         border: '4px solid #00FA9A',
