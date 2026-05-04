@@ -33,7 +33,7 @@ const PaintingAboutMe = () => {
             fontSize='15px'
           />
         </Box>
-        <Grid container>
+        <Grid container sx={{ marginTop: '1px' }}>
           <Box
             sx={{
               display: 'flex',
@@ -64,6 +64,41 @@ const PaintingAboutMe = () => {
             />
             <InformationalText
               title='Tenho como interesse aprimorar minhas habilidades como desenvolvedor e estar em constante evolução profissional, buscando sempre novos conhecimentos e desafios.'
+              fontSize='15px'
+              fontFamily='system-ui'
+              colorText='white'
+            />
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+              marginTop: '50px',
+              border: '2px solid',
+              borderColor: '#162E93',
+              borderRadius: '10px',
+              width: '810px',
+              height: '170px',
+              marginLeft: '25px',
+              paddingLeft: '15px',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease-in-out',
+              '&:hover': {
+                transform: 'scale(1.04)',
+                borderColor: '#162E93',
+              },
+            }}
+          >
+            <InformationalText
+              title='Objetivos'
+              fontSize='25px'
+              colorText='white'
+              fontFamily='montserrat, sans-serif'
+              fontWeight='700'
+            />
+            <InformationalText
+              title='Em busca de desafios que exijam soluções técnicas sofisticadas. Tenho como meta aplicar meu conhecimento de forma prática e estratégica no dia a dia, visando não apenas o crescimento mútuo, mas a evolução constante rumo ao topo da maturidade profissional no desenvolvimento de software'
               fontSize='15px'
               fontFamily='system-ui'
               colorText='white'

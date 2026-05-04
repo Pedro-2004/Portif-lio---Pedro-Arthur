@@ -7,7 +7,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Head = () => {
   return (
     <>
-      <AppBar sx={{ background: 'transparent', height: 85 }}>
+      <AppBar sx={{ background: 'black', height: 85 }}>
         <Toolbar
           sx={{
             gap: 2,
@@ -54,6 +54,7 @@ const Head = () => {
             borderColor='white'
             borderRadius='100px'
             fontSize='14px'
+            href='/Curriculo_Pedro_Arthur_Desenvolvedor.pdf'
           />
         </Toolbar>
         <Divider sx={{ backgroundColor: 'white' }} />

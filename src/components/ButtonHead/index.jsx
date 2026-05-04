@@ -8,6 +8,8 @@ const ButtonHead = ({
   borderColor,
   borderRadius,
   fontSize,
+  onClick,
+  href,
 }) => {
   return (
     <>
@@ -22,6 +24,10 @@ const ButtonHead = ({
           borderColor: borderColor,
         }}
         startIcon={icon}
+        onClick={onClick}
+        component={'a'}
+        href={href}
+        download={href}
       >
         {title}
       </Button>

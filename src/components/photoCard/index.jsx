@@ -12,6 +12,12 @@ const PhotoCard = ({ border, borderColor, borderRadius, marginRight }) => {
           borderColor: borderColor,
           borderRadius: borderRadius,
           marginRight: marginRight,
+          cursor: 'pointer',
+          transition: 'all 0.3s ease-in-out',
+          '&:hover': {
+            transform: 'scale(1.04)',
+            borderColor: '#162E93',
+          },
         }}
       >
         <img

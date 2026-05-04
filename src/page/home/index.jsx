@@ -11,6 +11,9 @@ import MarkunreadIcon from '@mui/icons-material/Markunread';
 import PaintingAboutMe from '@/components/PaintingAboutMe/index';
 
 const Home = () => {
+  const handleRedirect = (url) => {
+    window.open(url, '_blank');
+  };
   return (
     <>
       <Head />
@@ -66,6 +69,7 @@ const Home = () => {
               border='2px solid'
               borderColor='white'
               borderRadius='100px'
+              onClick={() => handleRedirect('https://wa.me/5531988306039')}
             />
             <ButtonHead
               icon={<GitHubIcon />}
@@ -74,6 +78,7 @@ const Home = () => {
               border='2px solid'
               borderColor='white'
               borderRadius='100px'
+              onClick={() => handleRedirect('https://github.com/Pedro-2004')}
             />
             <ButtonHead
               icon={<LinkedInIcon />}
@@ -82,6 +87,11 @@ const Home = () => {
               border='2px solid'
               borderColor='white'
               borderRadius='100px'
+              onClick={() =>
+                handleRedirect(
+                  'https://www.linkedin.com/in/pedroarthurresende/',
+                )
+              }
             />
             <ButtonHead
               icon={<MarkunreadIcon />}
@@ -90,6 +100,9 @@ const Home = () => {
               border='2px solid'
               borderColor='white'
               borderRadius='100px'
+              onClick={() =>
+                handleRedirect('mailto:arthur.resende758@gmail.com')
+              }
             />
           </Box>
         </Box>
