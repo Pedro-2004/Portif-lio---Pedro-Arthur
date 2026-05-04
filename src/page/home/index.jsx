@@ -8,6 +8,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MarkunreadIcon from '@mui/icons-material/Markunread';
+import PaintingAboutMe from '@/components/PaintingAboutMe/index';
 
 const Home = () => {
   return (
@@ -102,6 +103,7 @@ const Home = () => {
           />
         </Box>
       </Box>
+      <PaintingAboutMe />
     </>
   );
 };
