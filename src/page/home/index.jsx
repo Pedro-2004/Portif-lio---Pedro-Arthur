@@ -22,8 +22,9 @@ const Home = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginTop: '160px',
+          marginTop: '140px',
           padding: '0 80px',
+          marginLeft: '-39px',
         }}
       >
         <Box sx={{ maxWidth: '600px' }}>
@@ -31,34 +32,49 @@ const Home = () => {
             sx={{
               display: 'flex',
               flexDirection: 'column',
+              gap: '15px',
             }}
           >
             <InformationalText
-              title='DESENVOLVEDOR'
-              colorText='white'
-              fontSize='45px'
-              fontFamily='montserrat, sans-serif'
-              fontWeight='700'
-            />
-            <InformationalText
-              title='DE SOFTWARE'
-              colorText='#162E93'
-              fontSize='45px'
-              fontFamily='montserrat, sans-serif'
-              fontWeight='700'
-            />
-            <InformationalText
-              title='Olá! Seja bem-vindo ao meu portfólio. Sou Pedro Arthur, desenvolvedor Full Stack apaixonado por tecnologia e por transformar ideias em soluções reais. Aqui você pode conhecer meus projetos, habilidades e um pouco da minha jornada na programação.'
-              colorText='white'
-              fontSize='15px'
+              title={
+                <>
+                  OLÁ SEJA BEM-VINDO <span className='wave'>👋</span>
+                </>
+              }
+              fontSize='14px'
+              colorText='#2563EB'
               fontFamily='system-ui'
+              fontWeight='500'
             />
+            <Box>
+              <InformationalText
+                title='DESENVOLVEDOR'
+                colorText='white'
+                fontSize='45px'
+                fontFamily='montserrat, sans-serif'
+                fontWeight='700'
+                lineHeight='20px'
+              />
+              <InformationalText
+                title='DE SOFTWARE'
+                colorText='#2563EB'
+                fontSize='40px'
+                fontFamily='montserrat, sans-serif'
+                fontWeight='700'
+              />
+              <InformationalText
+                title='Sou Pedro Arthur, Desenvolvedor Full Stack apaixonado por tecnologia e por transformar ideias em soluções reais. Aqui você vai pode conhecer meus projetos, habilidades e um pouco da minha jornada na programação.'
+                colorText='white'
+                fontSize='15px'
+                fontFamily='system-ui'
+              />
+            </Box>
           </Box>
 
           <Box
             sx={{
               display: 'flex',
-              marginTop: '25px',
+              marginTop: '15px',
               gap: '10px',
             }}
           >

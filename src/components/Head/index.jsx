@@ -28,30 +28,17 @@ const Head = () => {
             }}
           >
             <ButtonHead title='Projetos' fontSize='14px' />
-            <Divider
-              orientation='vertical'
-              sx={{ backgroundColor: 'white' }}
-              flexItem
-            />
+
             <ButtonHead title='contatos' fontSize='14px' />
-            <Divider
-              orientation='vertical'
-              sx={{ backgroundColor: 'white' }}
-              flexItem
-            />
+
             <ButtonHead title='Experiencias' fontSize='14px' />
-            <Divider
-              orientation='vertical'
-              sx={{ backgroundColor: 'white' }}
-              flexItem
-            />
             <ButtonHead title='Habilidades' fontSize='14px' />
           </Box>
           <ButtonHead
             title='Curriculo'
             icon={<DownloadIcon />}
             border='2px solid'
-            borderColor='white'
+            borderColor='#2563EB'
             borderRadius='100px'
             fontSize='14px'
             href='/Curriculo_Pedro_Arthur_Desenvolvedor.pdf'

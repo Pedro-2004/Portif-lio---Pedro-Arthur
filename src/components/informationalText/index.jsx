@@ -5,6 +5,8 @@ const InformationalText = ({
   fontSize,
   fontFamily,
   fontWeight,
+  lineHeight,
+  maxWidth,
 }) => {
   return (
     <>
@@ -14,6 +16,8 @@ const InformationalText = ({
           color: colorText,
           fontSize: fontSize,
           fontWeight: fontWeight,
+          lineHeight: lineHeight,
+          maxWidth: maxWidth,
         }}
       >
         {title}

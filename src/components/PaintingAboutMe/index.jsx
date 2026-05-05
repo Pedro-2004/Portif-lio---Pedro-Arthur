@@ -10,7 +10,7 @@ const PaintingAboutMe = () => {
             display: 'flex',
             flexDirection: 'column',
             gap: '15px',
-            marginLeft: '25px',
+            marginLeft: '29px',
           }}
         >
           <InformationalText
@@ -31,6 +31,7 @@ const PaintingAboutMe = () => {
             fontFamily='system-ui'
             colorText='white'
             fontSize='15px'
+            maxWidth='700px'
           />
         </Box>
         <Grid container sx={{ marginTop: '1px' }}>
@@ -80,7 +81,7 @@ const PaintingAboutMe = () => {
               borderRadius: '10px',
               width: '810px',
               height: '170px',
-              marginLeft: '25px',
+              marginLeft: '30px',
               paddingLeft: '15px',
               cursor: 'pointer',
               transition: 'all 0.3s ease-in-out',
