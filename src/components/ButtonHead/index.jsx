@@ -10,6 +10,7 @@ const ButtonHead = ({
   fontSize,
   onClick,
   href,
+  showBar = true,
 }) => {
   return (
     <>
@@ -27,11 +28,11 @@ const ButtonHead = ({
           '&:hover': {
             color: '#2563EB',
             '&:after': {
-              width: '100%',
+              width: showBar ? '100%' : '0%',
             },
           },
           '&:after': {
-            content: '""',
+            content: showBar ? '""' : 'none',
             position: 'absolute',
             bottom: 5,
             left: '50%',
@@ -44,7 +45,6 @@ const ButtonHead = ({
         }}
         startIcon={icon}
         onClick={onClick}
-        component={'a'}
         href={href}
         download={href}
       >

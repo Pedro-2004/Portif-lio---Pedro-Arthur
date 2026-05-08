@@ -26,3 +26,4 @@ build_output.txt
 *.sln
 *.sw?
 .vite
+.vscode

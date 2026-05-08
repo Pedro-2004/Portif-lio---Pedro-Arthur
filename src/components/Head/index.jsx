@@ -42,6 +42,7 @@ const Head = () => {
             borderRadius='100px'
             fontSize='14px'
             href='/Curriculo_Pedro_Arthur_Desenvolvedor.pdf'
+            showBar={false}
           />
         </Toolbar>
         <Divider sx={{ backgroundColor: 'white' }} />

@@ -86,6 +86,7 @@ const Home = () => {
               borderColor='white'
               borderRadius='100px'
               onClick={() => handleRedirect('https://wa.me/5531988306039')}
+              showBar={false}
             />
             <ButtonHead
               icon={<GitHubIcon />}
@@ -95,6 +96,7 @@ const Home = () => {
               borderColor='white'
               borderRadius='100px'
               onClick={() => handleRedirect('https://github.com/Pedro-2004')}
+              showBar={false}
             />
             <ButtonHead
               icon={<LinkedInIcon />}
@@ -108,6 +110,7 @@ const Home = () => {
                   'https://www.linkedin.com/in/pedroarthurresende/',
                 )
               }
+              showBar={false}
             />
             <ButtonHead
               icon={<MarkunreadIcon />}
@@ -119,6 +122,7 @@ const Home = () => {
               onClick={() =>
                 handleRedirect('mailto:arthur.resende758@gmail.com')
               }
+              showBar={false}
             />
           </Box>
         </Box>
