@@ -24,9 +24,10 @@ const ButtonHead = ({
           border: border,
           borderColor: borderColor,
           textTransform: 'uppercase',
-          transition: 'color 0.4s ease',
+          transition: '0.3s ease',
           '&:hover': {
             color: '#2563EB',
+            transform: 'translateY(-2px)',
             '&:after': {
               width: showBar ? '100%' : '0%',
             },
