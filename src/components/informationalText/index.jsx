@@ -7,6 +7,7 @@ const InformationalText = ({
   fontWeight,
   lineHeight,
   maxWidth,
+  marginLeft,
 }) => {
   return (
     <>
@@ -18,6 +19,7 @@ const InformationalText = ({
           fontWeight: fontWeight,
           lineHeight: lineHeight,
           maxWidth: maxWidth,
+          marginLeft: marginLeft,
         }}
       >
         {title}
