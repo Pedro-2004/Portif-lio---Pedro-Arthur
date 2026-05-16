@@ -3,6 +3,7 @@ import { Box } from '@mui/material';
 import InformationalText from '@/components/InformationalText/index';
 
 import PhotoCard from '@/components/PhotoCard/index';
+import PaintingAboutMe from '@/components/PaintingAboutMe';
 
 const Projects = () => {
   return (
@@ -72,6 +73,7 @@ const Projects = () => {
           />
         </Box>
       </Box>
+      <PaintingAboutMe />
     </>
   );
 };
