@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 
 const ButtonHead = ({
+  children,
   title,
   icon,
   border,
@@ -12,12 +13,14 @@ const ButtonHead = ({
   showBar = true,
   component,
   to,
+  marginLeft,
 }) => {
   return (
     <Button
       variant='text'
       sx={{
         color: 'white',
+        marginLeft: marginLeft,
         fontFamily: 'system-ui',
         fontSize: fontSize,
         borderRadius: borderRadius,
@@ -51,6 +54,7 @@ const ButtonHead = ({
       component={component}
       to={to}
     >
+      {children}
       {title}
     </Button>
   );

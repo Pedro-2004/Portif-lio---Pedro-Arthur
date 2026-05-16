@@ -7,6 +7,7 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 import PhotoCard from '@/components/PhotoCard/index';
 import PaintingAboutMe from '@/components/PaintingAboutMe';
+import ProjectsIdeias from '@/components/ProjectIdeas';
 
 const Projects = () => {
   return (
@@ -96,6 +97,7 @@ const Projects = () => {
         thirdDescription='Meu hub profissional de projetos e habilidades, construído utilizando HTML, CSS e JavaScript para garantir alta performance e acessibilidade. O portfólio apresenta um design limpo e responsivo, servindo como uma vitrine digital para demonstrar minha evolução técnica e competências em desenvolvimento web.'
         thirdLink='https://github.com/Pedro-2004/trabalho_perfil_terceira_parte'
       />
+      <ProjectsIdeias />
     </>
   );
 };
