@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Box } from '@mui/material';
 import Logo from '@/components/Logo/index.jsx';
 import ButtonHead from '@/components/ButtonHead/index.jsx';
 import DownloadIcon from '@mui/icons-material/Download';
+import { Link } from 'react-router-dom';
 
 const Head = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -51,10 +52,31 @@ const Head = () => {
             flex: 2, // Espaço central maior para os itens do menu
           }}
         >
-          <ButtonHead title='Projetos' fontSize='13px' />
-          <ButtonHead title='contatos' fontSize='13px' />
-          <ButtonHead title='Experiencias' fontSize='13px' />
-          <ButtonHead title='Habilidades' fontSize='13px' />
+          <ButtonHead
+            title='Projetos'
+            fontSize='13px'
+            component={Link}
+            to='/Projects'
+          />
+
+          <ButtonHead
+            title='Contatos'
+            fontSize='13px'
+            component={Link}
+            to='/Contacts'
+          />
+          <ButtonHead
+            title='Experiencias'
+            fontSize='13px'
+            component={Link}
+            to='/Experiences'
+          />
+          <ButtonHead
+            title='Habilidades'
+            fontSize='13px'
+            component={Link}
+            to='/Skills'
+          />
         </Box>
 
         {/* ÁREA 3: BOTÃO CURRÍCULO (Flex 1 empurra para o final) */}

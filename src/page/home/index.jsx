@@ -9,6 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MarkunreadIcon from '@mui/icons-material/Markunread';
 import PaintingAboutMe from '@/components/PaintingAboutMe/index';
+import { AccountCircle, TrackChanges, EmojiEvents } from '@mui/icons-material';
 
 const Home = () => {
   const handleRedirect = (url) => {
@@ -136,7 +137,17 @@ const Home = () => {
           />
         </Box>
       </Box>
-      <PaintingAboutMe />
+      <PaintingAboutMe
+        FirstIcon={AccountCircle}
+        firstTitle='Sobre mim'
+        firstDescription='Como um entusiasta de tecnologia focado em resultados, minha trajetória como Desenvolvedor Full Stack é pautada pela busca incessante por excelência técnica. Sou especialista em converter visões em realidade digital, utilizando arquiteturas robustas e práticas de desenvolvimento ágil para entregar softwares que não apenas funcionam, mas superam as expectativas de performance e usabilidade.'
+        SecondIcon={TrackChanges}
+        secondTitle='Interesses'
+        secondDescription='Meu foco central é a evolução para o patamar de Desenvolvedor Full Stack de alto nível, dominando tanto o backend escalável quanto o frontend intuitivo. Tenho profundo interesse em Engenharia de Software, Sistemas Distribuídos e na criação de ecossistemas digitais que utilizem as melhores práticas de Clean Code e Design Patterns para garantir longevidade e qualidade técnica.'
+        ThirdIcon={EmojiEvents}
+        thirdTitle='Objetivos'
+        thirdDescription='Almejo integrar equipes de alto desempenho onde eu possa aplicar minha expertise técnica para solucionar problemas de escala global. Meu objetivo de longo prazo é atuar como uma peça estratégica na arquitetura de grandes sistemas, evoluindo continuamente para posições de liderança técnica e influenciando positivamente a cultura de engenharia de software.'
+      />
     </>
   );
 };
