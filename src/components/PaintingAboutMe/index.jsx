@@ -15,6 +15,11 @@ const PaintingAboutMe = ({
   showButton,
   buttonText,
   onButtonClick,
+  carWidth = '480px',
+  carHeight = '320px',
+  firstLink,
+  secondLink,
+  thirdLink,
 }) => {
   return (
     <Grid container sx={{ marginTop: '5px' }}>
@@ -27,8 +32,8 @@ const PaintingAboutMe = ({
           border: '2px solid',
           borderColor: '#162E93',
           borderRadius: '10px',
-          width: '480px',
-          height: '320px',
+          height: carHeight,
+          width: carWidth,
           marginLeft: '25px',
           padding: '25px',
           cursor: 'pointer',
@@ -75,6 +80,19 @@ const PaintingAboutMe = ({
           colorText='white'
           fontSize='15px'
         />
+        {firstLink && (
+          <Button
+            sx={{
+              color: '#2563EB',
+              fontWeight: 'bold',
+              marginTop: 'auto',
+              alignSelf: 'flex-start',
+            }}
+            onClick={() => window.open(firstLink, '_blank')}
+          >
+            Ver Repositório
+          </Button>
+        )}
       </Box>
 
       <Box
@@ -86,8 +104,8 @@ const PaintingAboutMe = ({
           border: '2px solid',
           borderColor: '#162E93',
           borderRadius: '10px',
-          width: '480px',
-          height: '320px',
+          height: carHeight,
+          width: carWidth,
           marginLeft: '25px',
           padding: '25px',
           cursor: 'pointer',
@@ -122,6 +140,19 @@ const PaintingAboutMe = ({
           fontFamily='system-ui'
           colorText='white'
         />
+        {secondLink && (
+          <Button
+            sx={{
+              color: '#2563EB',
+              fontWeight: 'bold',
+              marginTop: 'auto',
+              alignSelf: 'flex-start',
+            }}
+            onClick={() => window.open(secondLink, '_blank')}
+          >
+            Ver Repositório
+          </Button>
+        )}
       </Box>
 
       <Box
@@ -133,8 +164,8 @@ const PaintingAboutMe = ({
           border: '2px solid',
           borderColor: '#162E93',
           borderRadius: '10px',
-          width: '480px',
-          height: '320px',
+          height: carHeight,
+          width: carWidth,
           marginLeft: '25px',
           padding: '25px',
           cursor: 'pointer',
@@ -169,9 +200,19 @@ const PaintingAboutMe = ({
           fontFamily='system-ui'
           colorText='white'
         />
-        {showButton ? (
-          <Button onClick={onButtonClick}>{buttonText}</Button>
-        ) : null}
+        {thirdLink && (
+          <Button
+            sx={{
+              color: '#2563EB',
+              fontWeight: 'bold',
+              marginTop: 'auto',
+              alignSelf: 'flex-start',
+            }}
+            onClick={() => window.open(thirdLink, '_blank')}
+          >
+            Ver Repositório
+          </Button>
+        )}
       </Box>
     </Grid>
   );

@@ -138,6 +138,8 @@ const Home = () => {
         </Box>
       </Box>
       <PaintingAboutMe
+        carHeight='320px'
+        carWidth='480px'
         FirstIcon={AccountCircle}
         firstTitle='Sobre mim'
         firstDescription='Como um entusiasta de tecnologia focado em resultados, minha trajetória como Desenvolvedor Full Stack é pautada pela busca incessante por excelência técnica. Sou especialista em converter visões em realidade digital, utilizando arquiteturas robustas e práticas de desenvolvimento ágil para entregar softwares que não apenas funcionam, mas superam as expectativas de performance e usabilidade.'
