@@ -42,6 +42,7 @@ const ProjectsIdeias = () => {
         border='2px solid'
         borderColor='#2563EB'
         marginLeft='300px'
+        href='https://wa.me/5531988306039'
       >
         <ArrowForwardIcon sx={{ color: 'white' }} />
       </ButtonHead>
