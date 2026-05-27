@@ -37,7 +37,7 @@ const ProjectsIdeias = () => {
         />
       </Box>
       <ButtonHead
-        title='Vamos conversar'
+        title='Vamos conversar '
         showBar={false}
         border='2px solid'
         borderColor='#2563EB'

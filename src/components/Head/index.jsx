@@ -53,6 +53,9 @@ const Head = () => {
             flex: 2, // Espaço central maior para os itens do menu
           }}
         >
+          {location.pathname !== '/' && (
+            <ButtonHead title='Home' fontSize='13px' component={Link} to='/' />
+          )}
           {location.pathname !== '/Projects' && (
             <ButtonHead
               title='Projetos'

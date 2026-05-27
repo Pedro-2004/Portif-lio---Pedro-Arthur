@@ -8,6 +8,7 @@ const InformationalText = ({
   lineHeight,
   maxWidth,
   marginLeft,
+  icon,
 }) => {
   return (
     <>
@@ -21,6 +22,7 @@ const InformationalText = ({
           maxWidth: maxWidth,
           marginLeft: marginLeft,
         }}
+        startIcon={icon}
       >
         {title}
       </Typography>
