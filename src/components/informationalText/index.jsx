@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 const InformationalText = ({
   title,
   colorText,
@@ -11,7 +11,14 @@ const InformationalText = ({
   icon,
 }) => {
   return (
-    <>
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: icon ? '8px' : '0px',
+      }}
+    >
+      {icon}
       <Typography
         sx={{
           fontFamily: fontFamily,
@@ -22,11 +29,10 @@ const InformationalText = ({
           maxWidth: maxWidth,
           marginLeft: marginLeft,
         }}
-        startIcon={icon}
       >
         {title}
       </Typography>
-    </>
+    </Box>
   );
 };
 export default InformationalText;
