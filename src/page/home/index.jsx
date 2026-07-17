@@ -23,7 +23,7 @@ const Home = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginTop: '140px',
+          marginTop: '100px',
           padding: '0 80px',
           marginLeft: '-39px',
         }}
