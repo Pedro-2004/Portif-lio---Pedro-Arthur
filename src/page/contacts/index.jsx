@@ -7,8 +7,36 @@ import TextField from '@mui/material/TextField';
 import PhotoCard from '@/components/PhotoCard/index';
 import { WhatsApp } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ButtonHead from '@/components/ButtonHead';
+import { useState } from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Contacts = () => {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [mensagem, setMensagem] = useState('');
+  const enviarWhatsapp = () => {
+    if (!nome || !email || !mensagem) {
+      alert('Preencha todos os campos.');
+      return;
+    }
+
+    const texto = `
+Olá Pedro!
+
+Meu nome é ${nome}.
+E-mail: ${email}
+
+Gostaria de conversar sobre um projeto:
+
+${mensagem}
+`;
+
+    const url = `https://wa.me/5531988306039?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
+  };
+
   return (
     <>
       <Head />
@@ -113,8 +141,7 @@ const Contacts = () => {
             <Box
               sx={{
                 display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+
                 border: '2px solid',
                 borderColor: '#162E93',
                 borderRadius: '12px',
@@ -122,7 +149,14 @@ const Contacts = () => {
                 width: '50px',
               }}
             >
-              <MarkunreadIcon sx={{ color: '#e0e0e0ff' }} />
+              <ButtonHead
+                icon={<MarkunreadIcon />}
+                fontSize='14px'
+                onClick={() =>
+                  handleRedirect('mailto:arthur.resende758@gmail.com')
+                }
+                showBar={false}
+              />
             </Box>
             <Box
               sx={{
@@ -161,8 +195,7 @@ const Contacts = () => {
             <Box
               sx={{
                 display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+
                 border: '2px solid',
                 borderColor: '#162E93',
                 borderRadius: '12px',
@@ -170,7 +203,12 @@ const Contacts = () => {
                 width: '50px',
               }}
             >
-              <WhatsApp sx={{ color: '#e0e0e0ff' }} />
+              <ButtonHead
+                icon={<WhatsApp />}
+                fontSize='14px'
+                onClick={() => handleRedirect('https://wa.me/5531988306039')}
+                showBar={false}
+              />
             </Box>
             <Box
               sx={{
@@ -209,8 +247,7 @@ const Contacts = () => {
             <Box
               sx={{
                 display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+
                 border: '2px solid',
                 borderColor: '#162E93',
                 borderRadius: '12px',
@@ -218,7 +255,16 @@ const Contacts = () => {
                 width: '50px',
               }}
             >
-              <LinkedInIcon sx={{ color: '#e0e0e0ff' }} />
+              <ButtonHead
+                icon={<LinkedInIcon />}
+                fontSize='14px'
+                onClick={() =>
+                  handleRedirect(
+                    'https://www.linkedin.com/in/pedroarthurresende/',
+                  )
+                }
+                showBar={false}
+              />
             </Box>
             <Box
               sx={{
@@ -257,8 +303,6 @@ const Contacts = () => {
             <Box
               sx={{
                 display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
                 border: '2px solid',
                 borderColor: '#162E93',
                 borderRadius: '12px',
@@ -266,7 +310,12 @@ const Contacts = () => {
                 width: '50px',
               }}
             >
-              <LinkedInIcon sx={{ color: '#e0e0e0ff' }} />
+              <ButtonHead
+                icon={<GitHubIcon />}
+                fontSize='14px'
+                onClick={() => handleRedirect('https://github.com/Pedro-2004')}
+                showBar={false}
+              />
             </Box>
             <Box
               sx={{
@@ -276,14 +325,14 @@ const Contacts = () => {
               }}
             >
               <InformationalText
-                title='Instagram'
+                title='GitHub'
                 fontFamily='system-ui'
                 fontSize='15px'
                 colorText='white'
                 fontWeight='600'
               />
               <InformationalText
-                title='https://www.instagram.com/pedroarthu_10/'
+                title='https://github.com/Pedro-2004'
                 fontFamily='system-ui'
                 fontSize='15px'
                 colorText='white'
@@ -318,40 +367,126 @@ const Contacts = () => {
               }}
             >
               <TextField
-                id='meu-campo'
                 label='Digite seu nome'
                 variant='outlined'
-                fullWidth // Ocupa toda a largura disponível do card
+                fullWidth
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
                 sx={{
                   marginTop: '20px',
-                  // 1. Cor do texto digitado (branco)
                   input: { color: 'white', fontFamily: 'system-ui' },
-
-                  // 2. Cor da Label (quando está flutuando e quando está em repouso)
                   '& .MuiInputLabel-root': {
                     color: '#8892b0',
                     fontFamily: 'system-ui',
                   },
-                  '& .MuiInputLabel-root.Mui-focused': { color: '#2563EB' },
-
-                  // 3. Estilização da Borda do Input
+                  '& .MuiInputLabel-root.Mui-focused': {
+                    color: '#2563EB',
+                  },
                   '& .MuiOutlinedInput-root': {
-                    borderRadius: '10px', // Bordas levemente arredondadas para o campo
+                    borderRadius: '10px',
                     '& fieldset': {
-                      borderColor: '#162E93', // Borda azul escura padrão (combina com seus cards)
+                      borderColor: '#162E93',
                       borderWidth: '2px',
                     },
                     '&:hover fieldset': {
-                      borderColor: '#2563EB', // Borda acende em azul claro ao passar o mouse
+                      borderColor: '#2563EB',
                     },
                     '&.Mui-focused fieldset': {
-                      borderColor: '#2563EB', // Borda azul clara quando clicado
+                      borderColor: '#2563EB',
                     },
                   },
                 }}
               />
             </Box>
+
+            <Box
+              sx={{
+                display: 'flex',
+              }}
+            >
+              <TextField
+                label='Digite o seu Email'
+                variant='outlined'
+                fullWidth
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                sx={{
+                  marginTop: '20px',
+                  input: { color: 'white', fontFamily: 'system-ui' },
+                  '& .MuiInputLabel-root': {
+                    color: '#8892b0',
+                    fontFamily: 'system-ui',
+                  },
+                  '& .MuiInputLabel-root.Mui-focused': {
+                    color: '#2563EB',
+                  },
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '10px',
+                    '& fieldset': {
+                      borderColor: '#162E93',
+                      borderWidth: '2px',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: '#2563EB',
+                    },
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#2563EB',
+                    },
+                  },
+                }}
+              />
+            </Box>
+            <Box
+              sx={{
+                display: 'flex',
+              }}
+            >
+              <TextField
+                label='Digite a sua dúvida'
+                variant='outlined'
+                fullWidth
+                multiline
+                rows={4}
+                value={mensagem}
+                onChange={(e) => setMensagem(e.target.value)}
+                sx={{
+                  marginTop: '20px',
+                  marginY: '20px',
+                  input: { color: 'white', fontFamily: 'system-ui' },
+                  textarea: { color: 'white', fontFamily: 'system-ui' },
+                  '& .MuiInputLabel-root': {
+                    color: '#8892b0',
+                    fontFamily: 'system-ui',
+                  },
+                  '& .MuiInputLabel-root.Mui-focused': {
+                    color: '#2563EB',
+                  },
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '10px',
+                    '& fieldset': {
+                      borderColor: '#162E93',
+                      borderWidth: '2px',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: '#2563EB',
+                    },
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#2563EB',
+                    },
+                  },
+                }}
+              />
+            </Box>
+            <ButtonHead
+              title='💬 Enviar mensagem '
+              border='1px solid'
+              borderColor='#2563EB'
+              borderRadius='8px'
+              marginTop='30px'
+              onClick={enviarWhatsapp}
+            ></ButtonHead>
           </Box>
+          <Box sx={{ display: 'flex' }}></Box>
         </Box>
       </Box>
     </>
