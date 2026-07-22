@@ -141,7 +141,6 @@ ${mensagem}
             <Box
               sx={{
                 display: 'flex',
-
                 border: '2px solid',
                 borderColor: '#162E93',
                 borderRadius: '12px',
