@@ -34,7 +34,7 @@ const Projects = () => {
             <InformationalText
               title={
                 <>
-                  MEUS TRABALHOS <span className='wave'>👋</span>
+                  MEUS TRABALHOS <span className='wave'>🚀</span>
                 </>
               }
               fontSize='14px'

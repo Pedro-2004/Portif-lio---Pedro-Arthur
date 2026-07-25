@@ -7,6 +7,7 @@ import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import PhotoCard from '@/components/PhotoCard';
 
 const Experiences = () => {
   return (
@@ -33,7 +34,7 @@ const Experiences = () => {
             <InformationalText
               title={
                 <>
-                  OLÁ SEJA BEM-VINDO <span className='wave'>👋</span>
+                  MINHAS EXPERIÊNCIAS <span className='wave'>💡</span>
                 </>
               }
               fontSize='14px'
@@ -67,7 +68,16 @@ const Experiences = () => {
             </Box>
           </Box>
         </Box>
+        <Box>
+          <PhotoCard
+            border='3px solid'
+            borderColor='#162E93'
+            borderRadius='100%'
+            marginRight='40px'
+          />
+        </Box>
       </Box>
+
       <Box sx={{ marginTop: '50px' }}>
         <Box
           sx={{
