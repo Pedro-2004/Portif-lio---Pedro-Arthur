@@ -1,19 +1,32 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.enabled": true,
   "editor.quickSuggestions": {
-    "comments": "off",
-    "strings": "off",
-    "other": "off"
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
   },
-  "editor.suggestOnTriggerCharacters": false,
-  "editor.wordBasedSuggestions": "off",
-  "editor.parameterHints.enabled": false,
-  "editor.acceptSuggestionOnEnter": "off",
-  "javascript.autoClosingTags": false,
-  "javascript.suggest.autoImports": false,
-  "typescript.suggest.autoImports": false,
-  "emmet.showExpandedAbbreviation": "never",
-  "editor.hover.enabled": "off"
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.parameterHints.enabled": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "editor.hover.enabled": "on",
+
+  "antigravity.inlineSuggestions.enabled": false,
+  "antigravity.completions.enabled": false,
+  "antigravity.enableCodeSuggestions": false,
+  "antigravity.tab.enabled": false,
+  "antigravity.tab.suggestions": "off",
+  "antigravity.suggestions.showInEditor": false,
+  "antigravity.ghostText.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
